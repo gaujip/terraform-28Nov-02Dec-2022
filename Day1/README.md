@@ -226,3 +226,51 @@ Expected output
 jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ <b>sudo snap install terraform --classic</b>
 terraform 1.3.5 from Jon Seager (jnsgruk) installed
 </pre>
+
+## Cloning TekTutor GitHub Repository ( Do this only the first time )
+```
+cd ~
+git clone https://github.com/tektutor/terraform-28nov-02dec-2022.git
+cd terraform-28nov-02dec-2022
+```
+
+## Each time I push new code, you need to pull it ( download only delta changes )
+```
+cd ~/terraform-28nov-02dec-2022
+git pull
+```
+
+## Lab - Running your first terraform automation script
+```
+cd ~/terraform-28nov-02dec-2022
+git pull
+
+cd Day1/lab1
+terraform init
+```
+
+Expected output
+<pre>
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ terraform init
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Reusing previous version of kreuzwerker/docker from the dependency lock file
+- Installing kreuzwerker/docker v2.23.0...
+- Installed kreuzwerker/docker v2.23.0 (self-signed, key ID BD080C4571C6104C)
+
+Partner and community providers are signed by their developers.
+If you'd like to know more about provider signing, you can read about it here:
+https://www.terraform.io/docs/cli/plugins/signing.html
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+</pre>
