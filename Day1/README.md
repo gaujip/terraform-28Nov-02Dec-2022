@@ -53,9 +53,28 @@
 
 
 ## What is Cloud Computing?
-
-
+- on demand, we can create a Virtual machine with any kind of configuration
+  - we can choose the number of CPU cores
+  - amount of RAM
+  - amount of storage and type of storage, etc.,
+  - even we could choose the Internet bandwith, etc.,
+- we just need to pay for the amount of time we used the cloud infrastructure
+- storage service
 
 ## Types of Cloud Computing Services?
+Infrastructure as a Service ( IaaS )
+- We can rent Compute Resource ( HW, Storage and Internet ) 
+- we just to pay as a you go
+- we need to use our own licensed Operating Systems
+
+Platform as a Service ( PaaS )
+- Cloud vendor provides Hardware + OS(licensed/open source - depending on your need )
+- On top of the Platform you could install your own software, so you need have license for the softwares your are installing on top of the platform ( Oracle DB Server ) 
+
+Software as a Service ( SaaS )
+- Cloud vendor provides Hardware + OS(licensed/opensource) + Software ( Oracle DB, Weblogic, etc., ) 
 
 ## Types of Cloud
+1. Public cloud ( AWS, Azure, Gcp, Digital Ocean, etc., )
+2. Private cloud ( Datacenters owned and maitained by your organization )
+3. Hybrid cloud ( Private and Public Cloud )
