@@ -51,7 +51,6 @@
 - group of servers co-located in single region
 - in a single region, there could be multiple availability zone for High Availability
 
-
 ## What is Cloud Computing?
 - on demand, we can create a Virtual machine with any kind of configuration
   - we can choose the number of CPU cores
@@ -78,3 +77,47 @@ Software as a Service ( SaaS )
 1. Public cloud ( AWS, Azure, Gcp, Digital Ocean, etc., )
 2. Private cloud ( Datacenters owned and maitained by your organization )
 3. Hybrid cloud ( Private and Public Cloud )
+
+## What is Infrastructure as a Code Tool?
+- Example
+  - Terraform , Cloudformation Ansible, Puppet, Chef
+- they help in automating the infrastructure (Virtual Machine, software installation/configuration etc., )
+
+## What is Configuration Management Tool?
+- Helps in automating software installation and configuration on an existing Virtual Machine or an Operating System either locally or on cloud
+- Examples
+  - Ansible, Puppet, Chef and Salt(Saltstack)
+
+## What is Container Orchestration Platform?
+Examples
+- Docker SWARM
+- Google Kubernetes
+- Red Hat OpenShift
+- helping in managing your microservices or any containerized application
+- provides an environment which helps in making your application Highly Available(HA)
+- supports built-in loadbalancing, service discovery, scale up/down, rolling updates, monitoring 
+
+## What is a Provisioner tool?
+- Examples
+  - Terraform, Cloudformation Docker, Vagrant, etc.,
+- Helps in creating a Virtual Machine, Container onPrem or on cloud with specific OS with some hardware configuration
+
+## What is Cloudformation?
+- a Infrastructur as a Code from AWS
+- it can manage only AWS cloud infrastructure
+- doesn't support other cloud infrastruce like Azure, GCP, digital ocean
+
+## What is Terraform ?
+- Provisional tool
+- Idempotency on the infrastructure provisioning is supported
+   - desired state of virtual machine and actual state of virtual machine matches then Terraform will do nothing
+   - desired state of virtual machine and actual state of virtual machine is different
+- Terraform allow installation softwares on new infrastructure after provisioning is done
+- idempotency is not supported on the configurationmanagement
+
+## What is Ansible ?
+- Configuration Management Tool
+
+## What is Vagrant?
+- Virtual Machine Management software
+- it helps in declaratively creating and managing virtual machines using virtualbox, vmware hypervisors, etc.,
