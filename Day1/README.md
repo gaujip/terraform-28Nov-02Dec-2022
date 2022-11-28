@@ -22,10 +22,34 @@
         - a single physical core can supports 2,4,6,8 virtual core
   - RAM
   - Storage 
+- virtualization is heavy-weight technology
+  - each Virtual Machine(Guest OS) requires dedicated hardware resources
+  - CPU, RAM and storage
+- Virtual Machines
+  - OS installed is a fully function operating system
+  - it can be Windows/Linux/Mac ,etc.,
+  - each VM represents one fully functiona Operating System
+  - each OS installed in a VM has its own hardware resources and a dedicated OS Kernel
+  
+## Container Technology
+- it is an application virtualization technology
+- it is a lightweight virtualization
+- containers don't get their dedicated hardware resources
+- containers are application process not an Operating System
+- containers don't have their own OS kernel
+- each container represents one application(process)
+
+## What are the common characteristics of Virtual Machine and a Container?
+- both get their own file system
+- both get their own Network Stack
+- both get their own IP address
+- both get their own hostname
+- both get their own Network Card(s)
+- both get their own Ports ( 0 - 65535 )
 
 ## What is datacenter?
 - group of servers co-located in single region
-- 
+- in a single region, there could be multiple availability zone for High Availability
 
 
 ## What is Cloud Computing?
