@@ -137,7 +137,7 @@ az --version
 
 Expected output
 <pre>
-root@ubuntu:~# az version
+root@ubuntu:~# <b>az version</b>
 This command is in preview. It may be changed/removed in a future release.
 {
   "azure-cli": "2.0.81",
@@ -147,4 +147,16 @@ This command is in preview. It may be changed/removed in a future release.
     "azure-devops": "0.17.0"
   }
 }
+</pre>
+
+
+Verify the git version
+```
+git --version
+```
+
+Expected output
+<pre>
+root@ubuntu:~# <b>git --version</b>
+git version 2.25.1
 </pre>
