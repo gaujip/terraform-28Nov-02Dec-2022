@@ -121,3 +121,10 @@ Examples
 ## What is Vagrant?
 - Virtual Machine Management software
 - it helps in declaratively creating and managing virtual machines using virtualbox, vmware hypervisors, etc.,
+
+## Installing software required for our training
+```
+sudo su -
+apt install -y git vim azure-cli docker.io
+```
+When prompts for password, type 'rps@12345' without quotes
