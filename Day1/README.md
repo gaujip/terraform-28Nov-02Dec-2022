@@ -125,6 +125,7 @@ Examples
 ## Installing software required for our training
 ```
 sudo su -
+apt update
 apt install -y git vim azure-cli docker.io
 ```
 When prompts for password, type 'rps@12345' without quotes
