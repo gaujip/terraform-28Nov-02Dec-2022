@@ -532,3 +532,8 @@ docker_container.nginx: Creation complete after 1s [id=d2bc19740e095f14c3e478e67
 
 Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 </pre>
+
+## Using your Azure Pass
+<pre>
+https://www.microsoftazurepass.com/Home/HowTo?Length=5
+</pre>
