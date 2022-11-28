@@ -548,6 +548,7 @@ cd ~/terraform-28Nov-02Dec-2022
 git pull
 cd Day1/create-azure-resourcegroup
 terraform init
+terraform apply --auto-approve
 ```
 
 Expected output
@@ -575,4 +576,25 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
+
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/create-azure-resourcegroup$ <b>terraform apply --auto-approve</b>
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with
+the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # azurerm_resource_group.jegan will be created
+  + resource "azurerm_resource_group" "jegan" {
+      + id       = (known after apply)
+      + location = "eastus"
+      + name     = "jegan-resource-group"
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+azurerm_resource_group.jegan: Creating...
+azurerm_resource_group.jegan: Creation complete after 3s [id=/subscriptions/6ee542a8-0314-472f-a628-625cfbfcc778/resourceGroups/jegan-resource-group]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 </pre>
