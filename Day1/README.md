@@ -335,7 +335,7 @@ terraform plan
 
 Expected output
 <pre>
-jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ terraform plan
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ <b>terraform plan</b>
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with
 the following symbols:
