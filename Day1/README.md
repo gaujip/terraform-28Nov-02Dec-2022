@@ -160,3 +160,8 @@ Expected output
 root@ubuntu:~# <b>git --version</b>
 git version 2.25.1
 </pre>
+
+#### Troubleshooting azure cli installation
+<pre>
+https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
+</pre>
