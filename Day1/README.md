@@ -162,6 +162,35 @@ git version 2.25.1
 </pre>
 
 #### Troubleshooting azure cli installation
+```
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+```
+For more details instructions, refer the below instructions
 <pre>
 https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt
 </pre>
+
+
+#### Troubleshooting Docker installation
+```
+sudo apt-get update
+
+sudo apt-get install ca-certificates curl gnupg lsb-release
+
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+sudo usermod -aG docker $USER
+sudo su $USER
+docker images
+```
+
