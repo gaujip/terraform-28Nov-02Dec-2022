@@ -534,6 +534,7 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 </pre>
 
 ## Using your Azure Pass
+This requires an existing Azure account.
 <pre>
 https://www.microsoftazurepass.com/Home/HowTo?Length=5
 </pre>
