@@ -274,3 +274,27 @@ If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 </pre>
+
+Checking your .terraform folder, the folder where Terraform installs the provider plugins
+```
+cd ~/terraform-28nov-02dec-2022
+tree .terraform
+```
+
+Expected output
+<pre>
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ <b>tree .terraform</b>
+.terraform
+└── providers
+    └── registry.terraform.io
+        └── kreuzwerker
+            └── docker
+                └── 2.23.0
+                    └── linux_amd64
+                        ├── CHANGELOG.md
+                        ├── LICENSE
+                        ├── README.md
+                        └── terraform-provider-docker_v2.23.0
+
+6 directories, 4 files
+</pre>
