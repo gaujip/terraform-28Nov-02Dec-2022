@@ -245,13 +245,13 @@ git pull
 cd ~/terraform-28nov-02dec-2022
 git pull
 
-cd Day1/lab1
+cd Day1/create-docker-container
 terraform init
 ```
 
 Expected output
 <pre>
-jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ terraform init
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/create-docker-container$ terraform init
 
 Initializing the backend...
 
