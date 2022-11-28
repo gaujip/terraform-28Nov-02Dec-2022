@@ -161,6 +161,28 @@ root@ubuntu:~# <b>git --version</b>
 git version 2.25.1
 </pre>
 
+Verify the docker version installed
+```
+docker --version
+sudo usermod -aG docker $USER
+sudo su $USER
+docker images
+```
+
+Expected output
+<pre>
+root@ubuntu:~# <b>docker --version</b>
+Docker version 20.10.12, build 20.10.12-0ubuntu2~20.04.1
+
+jegan@ubuntu:~/Desktop$ docker images
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+jegan@ubuntu:~/Desktop$ <b>sudo usermod -aG docker $USER</b>
+[sudo] password for jegan: 
+jegan@ubuntu:~/Desktop$ <b>sudo su $USER</b>
+jegan@ubuntu:~/Desktop$ <b>docker images</b>
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+</pre>
+
 #### Troubleshooting azure cli installation
 ```
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
