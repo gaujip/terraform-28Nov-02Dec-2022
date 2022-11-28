@@ -534,7 +534,9 @@ Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 </pre>
 
 ## Using your Azure Pass
-This requires an existing Azure account.
+This requires an existing Azure account. In case you don't have an azure account, you can create one here https://azure.microsoft.com/en-in/get-started/azure-portal/
+
+You may refer the procedure to claim your azure pass at below URL
 <pre>
 https://www.microsoftazurepass.com/Home/HowTo?Length=5
 </pre>
