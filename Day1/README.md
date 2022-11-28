@@ -128,3 +128,22 @@ sudo su -
 apt install -y git vim azure-cli docker.io
 ```
 When prompts for password, type 'rps@12345' without quotes
+
+Verify if azure commandline tool is installation
+```
+az --version
+```
+
+Expected output
+<pre>
+root@ubuntu:~# az version
+This command is in preview. It may be changed/removed in a future release.
+{
+  "azure-cli": "2.0.81",
+  "azure-cli-core": "2.0.81",
+  "azure-cli-telemetry": "1.0.4",
+  "extensions": {
+    "azure-devops": "0.17.0"
+  }
+}
+</pre>
