@@ -552,7 +552,7 @@ terraform init
 
 Expected output
 <pre>
-jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/create-azure-resourcegroup$ terraform init
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/create-azure-resourcegroup$ <b>terraform init</b>
 
 Initializing the backend...
 
