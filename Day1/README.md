@@ -216,3 +216,13 @@ sudo su $USER
 docker images
 ```
 
+## Installing Terraform CLI tool
+```
+sudo snap install terraform --classic
+```
+
+Expected output
+<pre>
+jegan@ubuntu:~/terraform-28nov-02dec-2022/Day1/lab1$ <b>sudo snap install terraform --classic</b>
+terraform 1.3.5 from Jon Seager (jnsgruk) installed
+</pre>
