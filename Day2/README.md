@@ -78,3 +78,6 @@ Commercial support is available at
 </body>
 </html>
 ```
+
+In order to access the above web page from your local machine over Internet,  you need to open port 80 on the Virtual machine's firewall as shown below
+![Open Port Http](azure-nsg-allow-http-port.png)
