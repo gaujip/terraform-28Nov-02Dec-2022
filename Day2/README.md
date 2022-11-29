@@ -119,7 +119,7 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 
 
-(jegan@tektutor.org)$ terraform apply --auto-approve
+(jegan@tektutor.org)$ <b>terraform apply --auto-approve</b>
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
 following symbols:
@@ -382,9 +382,68 @@ ssh_key = <sensitive>
 
 Extracting the private key (pem file)
 ```
+terraform output ssh_key
 terraform output ssh_key > ./key.pem
 chmod 400 ./key.pem
 ```
+
+Expected output
+<pre>
+(jegan@tektutor.org)$ terraform output ssh_key
+<<EOT
+-----BEGIN RSA PRIVATE KEY-----
+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
+-----END RSA PRIVATE KEY-----
+
+EOT
+</pre>
 
 Try to SSH into the Virtual machine
 ```
