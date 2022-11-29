@@ -95,6 +95,30 @@ terraform apply --auto-approve
 
 Expected output
 <pre>
+
+(jegan@tektutor.org)$ <b>terraform init</b>
+
+Initializing the backend...
+
+Initializing provider plugins...
+- Reusing previous version of hashicorp/azurerm from the dependency lock file
+- Reusing previous version of hashicorp/tls from the dependency lock file
+- Installing hashicorp/azurerm v3.33.0...
+- Installed hashicorp/azurerm v3.33.0 (signed by HashiCorp)
+- Installing hashicorp/tls v4.0.4...
+- Installed hashicorp/tls v4.0.4 (signed by HashiCorp)
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running "terraform plan" to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.
+
+
 (jegan@tektutor.org)$ terraform apply --auto-approve
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the
