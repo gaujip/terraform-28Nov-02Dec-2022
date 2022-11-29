@@ -43,7 +43,7 @@ terraform apply --auto-approve
 ```
 
 
-## Lab - Installing nginx web server on the Azure VM created manually
+## ⛹️‍♂️ Lab - Installing nginx web server on the Azure VM created manually
 ```
 sudo apt update && sudo apt install -y nginx
 curl localhost
