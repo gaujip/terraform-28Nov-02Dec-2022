@@ -83,7 +83,7 @@ In order to access the above web page from your local machine over Internet,  yo
 ![Open Port Http](azure-nsg-allow-http-port.png)
 
 
-## Lab - Creating a Ubuntu Virtual Machine using Terraform in Azure portal
+## ⛹️‍♂️ Lab - Creating a Ubuntu Virtual Machine using Terraform in Azure portal
 ```
 cd ~/terraform-28Nov-02Dec-2022
 git pull
@@ -495,4 +495,14 @@ Check if the firewall rules we created are working
 ```
 curl http://20.25.30.208
 ping 20.25.30.208
+```
+
+## ⛹️‍♂️ Lab - Creating multiple Azure VMs using Terraform
+```
+cd ~/terraform-28Nov-02Dec-2022
+git pull
+cd create-multiple-vms-in-azure-using-terraform
+
+terraform init
+terraform apply --auto-approve
 ```
