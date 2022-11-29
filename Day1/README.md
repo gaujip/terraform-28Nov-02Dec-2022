@@ -542,6 +542,13 @@ https://www.microsoftazurepass.com/Home/HowTo?Length=5
 </pre>
 
 
+## Login to azure portal using azure cli utility
+The below command will launch your default web browser, you need to login to your Azure portal with your azure account credentials.  Once you have successfully logged in, your command prompt will display your Azure subscription ID, tenant ID, etc., details.
+
+```
+az login
+```
+
 ## Lab - Create a resource group in Azure Portal
 ```
 cd ~/terraform-28Nov-02Dec-2022
