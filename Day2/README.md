@@ -371,6 +371,43 @@ curl http://localhost
 exit
 ```
 
+Expected output
+<pre>
+(jegan@tektutor.org)$ ssh -i ./key.pem azureuser@20.25.30.208
+The authenticity of host '20.25.30.208 (20.25.30.208)' can't be established.
+ECDSA key fingerprint is SHA256:Z1UE8ivYJiOgjGMAuhUkoZWyo0cD3tX1qr+YxqK5/E8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '20.25.30.208' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1094-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Nov 29 09:13:03 UTC 2022
+
+  System load:  0.15              Processes:           110
+  Usage of /:   4.8% of 28.89GB   Users logged in:     0
+  Memory usage: 5%                IP address for eth0: 10.0.1.4
+  Swap usage:   0%
+
+0 updates can be applied immediately.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+azureuser@myvm:~$ exit
+</pre>
+
 Check if the firewall rules we created are working
 ```
 curl http://20.25.30.208
