@@ -598,3 +598,6 @@ azurerm_resource_group.jegan: Creation complete after 3s [id=/subscriptions/6ee5
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 </pre>
+
+## How Terraform provisions infrastructure in Azure Cloud?
+![Terraform](Terraform.png)
