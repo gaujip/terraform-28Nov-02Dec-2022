@@ -51,7 +51,7 @@ curl localhost
 
 Expected output
 ```
-azureuser@ubuntu-vm:~$ curl localhost
+azureuser@ubuntu-vm:~$ <b>curl localhost</b>
 <!DOCTYPE html>
 <html>
 <head>
