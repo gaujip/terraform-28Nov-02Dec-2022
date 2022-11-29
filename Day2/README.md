@@ -31,3 +31,13 @@ terraform apply --auto-approve
 az login --use-device-code
 ```
 The above command will display the URL and a code. You may manually open the URL and submit the code displayed to login.  This might also be helpful in case you are using putty or similar terminal utility in text mode.
+
+## Lab - Understanding count loop
+```
+cd ~/terraform-28Nov-02Dec-2022
+git pull
+cd Day2/loops
+
+terraform init
+terraform apply --auto-approve
+```
