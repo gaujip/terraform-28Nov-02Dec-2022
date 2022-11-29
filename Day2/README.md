@@ -18,3 +18,9 @@ provider "azurerm" {
     tenant_id = "your-azure-tenantid"
 }
 </pre>
+
+You may then try 
+```
+terraform init
+terraform apply --auto-approve
+```
