@@ -84,6 +84,9 @@ resource "azurerm_network_interface" "my_nic" {
         private_ip_address_allocation = "Dynamic"
         public_ip_address_id = azurerm_public_ip.my_public_ip[count.index].id 
     }
+    depends_on = [
+        azurerm_network_security_group.my_nsg
+    ]
 }
 
 resource "azurerm_network_interface_security_group_association" "nic_nsg_connector" {
@@ -91,6 +94,9 @@ resource "azurerm_network_interface_security_group_association" "nic_nsg_connect
     
     network_interface_id = azurerm_network_interface.my_nic[count.index].id
     network_security_group_id = azurerm_network_security_group.my_nsg[count.index].id
+    depends_on = [
+        azurerm_network_interface.my_nic
+    ]
 }
 
 resource "tls_private_key" "my_ssh_key" {

@@ -4,5 +4,13 @@ variable "resource_group_location" {
 }
 
 variable "vm_count" {
-   default = 3
+   type = number
+/*
+   description = "The number of Virtual machines you wish to create in your Azure portal"
+
+   validation {
+        condition  = var.vm_count > 1 && var.vm_count <= 5
+        error_message = "The vm_count should be greater 0 must be less than or equal to 5."
+   }
+*/
 }
