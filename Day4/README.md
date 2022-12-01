@@ -38,3 +38,9 @@
   2. PowerShell (.Net Framework )
 - Ansible Playbooks are YAML file
 - which is declarative
+
+## Forcing resource recreate in Terraform
+```
+terraform apply -replace=local_file.invoke_ansible_playbook --auto-approve
+```
+
