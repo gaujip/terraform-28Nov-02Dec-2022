@@ -10,12 +10,14 @@ terraform {
       version = "4.0.4"
     }
   }
+/**/
   backend "azurerm" {
      resource_group_name = "tektutor-resource-group-new"
      storage_account_name = "tektutortfstate" 
      container_name = "tektutortfstate"
      key = "terraform.tfstate"
   }
+/**/
 }
 
 provider "azurerm" {

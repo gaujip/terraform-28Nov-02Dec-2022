@@ -1,0 +1,6 @@
+- name: This playbook will install nginx, configure it and deploy custom html web page into
+  hosts: all
+  become: yes
+  tasks:
+  - name: Install nginx web server onto Azure ubuntu node
+    apt: name=nginx state=latest update_cache=yes

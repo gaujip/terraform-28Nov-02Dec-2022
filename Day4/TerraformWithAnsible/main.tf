@@ -74,7 +74,7 @@ resource "azurerm_network_security_group" "my-nsg" {
     priority = "200"
     direction = "Inbound"
     access = "Allow"
-    protocol = "ICMP"
+    protocol = "Icmp"
     source_port_range = "*"
     destination_port_range = "*"
     source_address_prefix = "*"
@@ -162,7 +162,7 @@ resource "azurerm_linux_virtual_machine" "my_ubuntu_vm" {
 resource "null_resource" "clean_up_local_files" {
   
     provisioner "local-exec" {
-        command = "rm ./ip* && rm ./key.pem && touch ./install-nginx-playbook.yml"
+        command = "rm -f ./ip* && rm -f ./key.pem"
     }
  
 }
@@ -173,7 +173,15 @@ resource "local_file" "key_pem" {
     file_permission = "0400"
 }
 
-resource "local_file" "ip" {
+resource "time_sleep" "wait_120_seconds" {
+    create_duration = "120s"
+
+    depends_on = [
+        azurerm_linux_virtual_machine.my_ubuntu_vm
+    ]
+}
+
+resource "local_file" "invoke_ansible_playbook" {
   count = 3
   content  = azurerm_linux_virtual_machine.my_ubuntu_vm[count.index].public_ip_address 
   filename = "./ip${count.index}.txt"
@@ -182,5 +190,5 @@ resource "local_file" "ip" {
     command = "ansible-playbook -u azureuser -i ./ip${count.index}.txt install-nginx-playbook.yml"
   }
 
-  depends_on = [ azurerm_linux_virtual_machine.my_ubuntu_vm ] 
+  depends_on = [ time_sleep.wait_120_seconds ] 
 }

@@ -4,6 +4,7 @@
   vars:
   - provisioner_tool: Terraform
   - conf_mgr_tool: Ansible
+  - greeting_msg: DevOps
 
   tasks:
   - name: Install nginx in Ubuntu Ansible nodes

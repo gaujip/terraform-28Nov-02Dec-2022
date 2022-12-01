@@ -1,0 +1,5 @@
+[all]
+ubuntu1 ansible_user=azureuser ansible_host=20.185.55.200 ansible_private_key_file=./key.pem 
+ubuntu2 ansible_user=azureuser ansible_host=20.169.165.142 ansible_private_key_file=./key.pem 
+ubuntu3 ansible_user=azureuser ansible_host=20.185.51.144 ansible_private_key_file=./key.pem 
+

@@ -1,0 +1,5 @@
+- name: This playbook demonstrates a simple playbook to ping ansible nodes
+  hosts: all
+  tasks:
+  - name: Ping the Azure Virtual Machine
+    ping: 

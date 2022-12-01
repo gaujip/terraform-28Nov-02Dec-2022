@@ -1,9 +1,5 @@
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_resource_group" "main" {
-  name     = "${var.prefix}-resources"
+  name     = "${var.prefix}-resoure-group"
   location = "${var.location}"
 }
 
