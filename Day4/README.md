@@ -44,3 +44,8 @@
 terraform apply -replace=local_file.invoke_ansible_playbook --auto-approve
 ```
 
+## Azure App Service SKU choices
+<pre>
+https://azure.microsoft.com/en-in/pricing/details/app-service/windows/
+</pre>
+
