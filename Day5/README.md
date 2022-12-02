@@ -48,7 +48,7 @@ PremiumV2 Tier → P1v2, P2v2, P3v2 (Small, Medium, Large)
 https://github.com/Microsoft/azure-pipelines-agent/releases
 </pre>
 
-## Lab - Creating a self-hosted Azure Pipeline agent to run Terraform scripts
+## Lab - Manually creating a self-hosted Azure Pipeline Linux agent to run Terraform scripts
 
 #### Create a Personal Access Token
 From your Azure portal, search for "Azure DevOps organizations" and click the same
