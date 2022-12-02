@@ -1,5 +1,10 @@
 # Day 5
 
+## Microsoft Azure self-host agent binaries
+```
+https://github.com/Microsoft/azure-pipelines-agent/releases
+```
+
 ## Azure App Service Plan SKU
 <pre>
 Free Tier → F1
