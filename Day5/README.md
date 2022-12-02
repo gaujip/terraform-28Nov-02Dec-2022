@@ -123,6 +123,11 @@ total 624
 -rwxr-xr-x 1 root root 111664 Oct 25 09:30 unpack200
 </pre>
 
+Checking the docker service status
+```
+sudo systemctl status docker
+```
+
 3. From the terminal, type the below command, copy the code and paste the code on the web page that popped up and login to your azure portal to authenticate.
 ```
 az login
