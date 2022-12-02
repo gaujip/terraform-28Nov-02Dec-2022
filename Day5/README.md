@@ -138,3 +138,29 @@ Scanning for tool capabilities.
 Connecting to the server.
 2022-11-25 00:15:55Z: Listening for Jobs
 </pre>
+
+## ⛹️‍♀️ Lab - Creating a Linux Self Host Azure pipeline agent
+```
+export AZDO_PERSONAL_ACCESS_TOKEN=<Personal Access Token>
+export AZDO_ORG_SERVICE_URL=https://dev.azure.com/<Your Org Name>
+
+cd ~/terraform-28nov-02dec-2022
+git pull
+
+cd Day5/self-hosted-azure-pipeline-linux-agent
+terraform init
+terraform apply --auto-approve
+```
+
+## ⛹️‍♂️ Lab - Creating a Windows Self Host Azure pipeline agent
+```
+export AZDO_PERSONAL_ACCESS_TOKEN=<Personal Access Token>
+export AZDO_ORG_SERVICE_URL=https://dev.azure.com/<Your Org Name>
+
+cd ~/terraform-28nov-02dec-2022
+git pull
+
+cd Day5/self-hosted-azure-pipeline-windows-agent
+terraform init
+terraform apply --auto-approve
+```
