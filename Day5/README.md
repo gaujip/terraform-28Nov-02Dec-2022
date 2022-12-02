@@ -73,6 +73,56 @@ sudo usermod -aG docker $USER
 sudo su azureuser
 docker images
 ```
+
+Verify if maven version works
+```
+mvn --version
+ls -l /usr/lib/jvm/java-11-openjdk-amd64/bin 
+```
+Expected output
+<pre>
+Apache Maven 3.6.3
+Maven home: /usr/share/maven
+Java version: 11.0.17, vendor: Ubuntu, runtime: /usr/lib/jvm/java-11-openjdk-amd64
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "5.15.0-1023-azure", arch: "amd64", family: "unix"
+azureuser@linux-selfhosted-agent:~$ ls -l /usr/lib/jvm/java-11-openjdk-amd64/bin
+total 624
+-rwxr-xr-x 1 root root  14632 Oct 25 09:30 jaotc
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jar
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jarsigner
+-rwxr-xr-x 1 root root  14560 Oct 25 09:30 java
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 javac
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 javadoc
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 javap
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jcmd
+-rwxr-xr-x 1 root root  14624 Oct 25 09:30 jconsole
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jdb
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jdeprscan
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jdeps
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jfr
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jhsdb
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jimage
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 jinfo
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 jjs
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 jlink
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 jmap
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jmod
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jps
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 jrunscript
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jshell
+-rwxr-xr-x 1 root root  14608 Oct 25 09:30 jstack
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jstat
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 jstatd
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 keytool
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 pack200
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 rmic
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 rmid
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 rmiregistry
+-rwxr-xr-x 1 root root  14576 Oct 25 09:30 serialver
+-rwxr-xr-x 1 root root 111664 Oct 25 09:30 unpack200
+</pre>
+
 3. From the terminal, type the below command, copy the code and paste the code on the web page that popped up and login to your azure portal to authenticate.
 ```
 az login
