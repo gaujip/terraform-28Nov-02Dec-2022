@@ -1,5 +1,45 @@
 # Day 5
 
+## Installing .Dot Framework in Ubuntu 18.04
+
+Before you install .NET, run the following commands to add the Microsoft package signing key to your list of trusted keys and add the package repository.
+```
+wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+Installing .dot net 6 Framework 
+```
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
+```
+
+## Installing .Dot Framework in Ubuntu 20.04
+```
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+Installing .dot 6 Framework
+```
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0
+sudo apt-get update && sudo apt-get install -y aspnetcore-runtime-6.0
+```
+
+## Installing .Dot Framework in Ubuntu 22.04
+```
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
+```
+
+Installing .dot 6 Framework
+```
+sudo apt-get update && sudo apt-get install -y dotnet-sdk-7.0
+sudo apt-get update && sudo apt-get install -y aspnetcore-runtime-7.0
+```
+
 ## Azure App Service Plan SKU
 <pre>
 Free Tier → F1
