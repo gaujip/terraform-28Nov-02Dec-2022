@@ -152,6 +152,21 @@ terraform init
 terraform apply --auto-approve
 ```
 
+In case you wish to get inside the container for troubleshooting 
+```
+az container exec --resource-group tektutor-resource-group --container-name linux-agent-0 --name linux-agent-0 --exec-command "/bin/bash"
+```
+Expected output
+```
+(jegan@tektutor.org)$ <b>az container exec --resource-group tektutor-resource-group --container-name linux-agent-0 --name linux-agent-0 --exec-command "/bin/bash"</b>
+root@SandboxHost-638055415862234554:/azp# <b>ls</b>
+agent  start.sh
+root@SandboxHost-638055415862234554:/azp# exit
+exit
+</b>
+```
+
+
 ## ⛹️‍♂️ Lab - Creating a Windows Self Host Azure pipeline agent
 ```
 export AZDO_PERSONAL_ACCESS_TOKEN=<Personal Access Token>
